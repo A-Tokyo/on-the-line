@@ -1,2 +1,2 @@
-# on-the-line
-A React Native based instagram like application.
+# On-the-Line
+A React Native based instagram-like application.

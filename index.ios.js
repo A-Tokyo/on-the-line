@@ -1,36 +1,8 @@
-/**
- * Sample React Native App
- * https://github.com/facebook/react-native
- */
+import React from 'react-native'
+import Root from './src/root'
 
-import React, {
-  AppRegistry,
-  Component,
-  StyleSheet,
-  Text,
-  View,
-} from 'react-native';
+const {
+  AppRegistry
+} = React
 
-import Home from './Home';
-import { Provider } from 'react-redux';
-import { createStore } from 'redux';
-
-import reducer from './app/redux/reducers.js';
-
-
-//create Redux store
-let store = createStore(reducer);
-
-
-class Project extends Component {
-  render() {
-    return (
-      <Provider store={store}>
-        <Home />
-      </Provider>
-    );
-  }
-}
-
-
-AppRegistry.registerComponent('Project', () => Project);
+AppRegistry.registerComponent('on-the-line', () => Root)
