@@ -9,7 +9,7 @@ from 'react-native'
 
 import styles from '../styles/'
 
-var imagesUrls = ['https://i.ytimg.com/vi/k0GZIg8pvjM/hqdefault.jpg','http://www.thefamouspeople.com/profiles/images/adolf-hitler-32.jpg','https://i.ytimg.com/vi/k0GZIg8pvjM/hqdefault.jpg','https://i.ytimg.com/vi/k0GZIg8pvjM/hqdefault.jpg','http://www.thefamouspeople.com/profiles/images/adolf-hitler-32.jpg','https://i.ytimg.com/vi/k0GZIg8pvjM/hqdefault.jpg','http://www.thefamouspeople.com/profiles/images/adolf-hitler-32.jpg','https://i.ytimg.com/vi/k0GZIg8pvjM/hqdefault.jpg','https://i.ytimg.com/vi/k0GZIg8pvjM/hqdefault.jpg','http://www.thefamouspeople.com/profiles/images/adolf-hitler-32.jpg'];
+var imagesUrls = ['https://i.ytimg.com/vi/k0GZIg8pvjM/hqdefault.jpg','http://www.thefamouspeople.com/profiles/images/adolf-hitler-32.jpg','https://i.ytimg.com/vi/k0GZIg8pvjM/hqdefault.jpg','https://i.ytimg.com/vi/k0GZIg8pvjM/hqdefault.jpg','http://www.thefamouspeople.com/profiles/images/adolf-hitler-32.jpg','https://i.ytimg.com/vi/k0GZIg8pvjM/hqdefault.jpg','http://www.thefamouspeople.com/profiles/images/adolf-hitler-32.jpg','https://i.ytimg.com/vi/k0GZIg8pvjM/hqdefault.jpg','https://i.ytimg.com/vi/k0GZIg8pvjM/hqdefault.jpg','http://www.thefamouspeople.com/profiles/images/adolf-hitler-32.jpg','http://www.thefamouspeople.com/profiles/images/adolf-hitler-32.jpg','https://i.ytimg.com/vi/k0GZIg8pvjM/hqdefault.jpg','https://i.ytimg.com/vi/k0GZIg8pvjM/hqdefault.jpg'];
 const ds = new ListView.DataSource({
   rowHasChanged: (r1, r2) => !r1!=r2
 });
@@ -18,9 +18,7 @@ const MyImages = (props)=>(
   <View style={styles.mainView}>
     <ListView
       contentContainerStyle=
-      {{
-        flexDirection: 'row',
-        flexWrap: 'wrap'}}
+      {styles.list}
 
       dataSource  ={ds.cloneWithRows(imagesUrls)}
       renderRow   ={(imageUrl)=>(

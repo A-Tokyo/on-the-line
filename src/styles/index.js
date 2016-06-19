@@ -14,11 +14,18 @@ export default {
     fontSize : 20
   },
   mainView : {
+    marginTop : 15,
     padding: 15,
-    backgroundColor:'black',
+    backgroundColor:'white',
     flexDirection:'column',
     flex: 1,
     alignItems: 'stretch',
     justifyContent:'center'
-  }
+  },
+  list:
+  {
+    flexDirection: 'row',
+    flexWrap: 'wrap'
+    }
+
 }
