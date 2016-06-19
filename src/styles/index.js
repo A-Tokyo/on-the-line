@@ -12,7 +12,7 @@ export default {
     borderColor:'#fff',
     margin :10,
     fontSize : 20
-  }
+  },
   mainView : {
     padding: 15,
     backgroundColor:'black',

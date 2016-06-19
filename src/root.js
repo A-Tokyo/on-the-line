@@ -5,15 +5,15 @@ import React, {Component} from 'react-native'
 // import UploadPic from './components/UploadPic'
 // import AddComment from './components/AddComment'
 // import Home from './components/Home'
-import UserInfo from './components/UserInfo'
-
+// import UserInfo from './components/UserInfo'
+import MyImages from './components/MyImages'
 
 // const store = configureStore()
 
 class Root extends Component{
   render () {
     return (
-        <UserInfo />
+        <MyImages />
     )
   }
 }
