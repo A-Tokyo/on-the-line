@@ -7,13 +7,15 @@ import React, {Component} from 'react-native'
 // import Home from './components/Home'
 // import UserInfo from './components/UserInfo'
 // import MyImages from './components/MyImages'
-import Profile from './components/Profile'
+// import Profile from './components/Profile'
+
+import Footer from './components/Footer'
 // const store = configureStore()
 
 class Root extends Component{
   render () {
     return (
-        <Profile />
+        <Footer />
     )
   }
 }

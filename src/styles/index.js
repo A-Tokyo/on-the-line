@@ -26,6 +26,14 @@ export default {
   {
     flexDirection: 'row',
     flexWrap: 'wrap'
-    }
+  },
+  img:
+  {height:40, width:40},
+  footer:
+  {flexDirection:'row', flex:1,alignItems: 'center',
+    justifyContent:'space-between', padding: 40,
+    position: 'absolute', bottom:0, left: 0, right: 0,
+    backgroundColor:'white'}
+
 
 }
