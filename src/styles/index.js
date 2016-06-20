@@ -19,7 +19,7 @@ export default {
     backgroundColor:'white',
     flexDirection:'column',
     flex: 1,
-    alignItems: 'stretch',
+    alignItems: 'center',
     justifyContent:'center'
   },
   list:
