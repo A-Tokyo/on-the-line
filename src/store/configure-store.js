@@ -11,7 +11,8 @@ export default function configureStore(initialState) {
     const logger = createLogger();
     const store = createStore(
       reducer,
-      applyMiddleware(thunk, promise, logger)
+      applyMiddleware(thunk, promise, logger),
+      initialState
     );
 
     return store;
