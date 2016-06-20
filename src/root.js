@@ -6,14 +6,14 @@ import React, {Component} from 'react-native'
 // import AddComment from './components/AddComment'
 // import Home from './components/Home'
 // import UserInfo from './components/UserInfo'
-import MyImages from './components/MyImages'
-
+// import MyImages from './components/MyImages'
+import Profile from './components/Profile'
 // const store = configureStore()
 
 class Root extends Component{
   render () {
     return (
-        <MyImages />
+        <Profile />
     )
   }
 }

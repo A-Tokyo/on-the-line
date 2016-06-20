@@ -15,7 +15,7 @@ export default {
   },
   mainView : {
     marginTop : 15,
-    padding: 15,
+    padding: 10,
     backgroundColor:'white',
     flexDirection:'column',
     flex: 1,

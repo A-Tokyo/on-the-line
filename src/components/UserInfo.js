@@ -8,9 +8,9 @@ from 'react-native'
 
 const UserInfo = (props) =>
 (
-  <View style={{ backgroundColor:'white', flexDirection:'row', flex:1, alignItems: 'center', justifyContent:'center'}}>
+  <View style={{ backgroundColor:'white', flexDirection:'row', alignItems: 'center', justifyContent:'center'}}>
     <Image style={{height:50, width:50, margin:20}}
-    source={require('../../assets/hitler.png')}
+    source={{uri: 'https://i.ytimg.com/vi/k0GZIg8pvjM/hqdefault.jpg'}}
     />
 
   <Text
