@@ -9,13 +9,15 @@ import React, {Component} from 'react-native'
 // import MyImages from './components/MyImages'
 // import Profile from './components/Profile'
 
-import Footer from './components/Footer'
+// import Footer from './components/Footer'
+import Welcome from './components/Welcome'
+
 // const store = configureStore()
 
 class Root extends Component{
   render () {
     return (
-        <Footer />
+        <Welcome />
     )
   }
 }
