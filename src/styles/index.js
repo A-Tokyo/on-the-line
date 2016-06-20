@@ -31,7 +31,8 @@ export default {
   {height:40, width:40},
   footer:
   {flexDirection:'row', flex:1,alignItems: 'center',
-    justifyContent:'space-between', padding: 40,
+    justifyContent:'space-between', padding: 20,
+    paddingLeft: 30, paddingRight:30,
     position: 'absolute', bottom:0, left: 0, right: 0,
     backgroundColor:'white'}
 
