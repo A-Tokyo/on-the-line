@@ -6,10 +6,10 @@ export default {
     height: 50,
     padding: 5,
     width: deviceWidth - 100,
-    color: '#fff',
+    color: 'black',
     borderRadius: 10,
     borderWidth: 2,
-    borderColor:'#fff',
+    borderColor:'black',
     margin :10,
     fontSize : 20
   },

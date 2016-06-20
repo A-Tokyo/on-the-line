@@ -10,7 +10,7 @@ import React, {Component,View} from 'react-native'
 // import Profile from './components/Profile'
 
 // import Footer from './components/Footer'
-// import Welcome from './components/Welcome'
+import Welcome from './components/Welcome'
 // import Comments from './components/Comments'
 // import PicPost from './components/PicPost'
 import Main from './components/Main.js'
@@ -19,7 +19,7 @@ import Main from './components/Main.js'
 class Root extends Component{
   render () {
     return (
-      <Main />
+      <Welcome />
     )
   }
 }
