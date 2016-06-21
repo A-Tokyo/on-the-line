@@ -6,8 +6,11 @@
     "start": "node node_modules/react-native/local-cli/cli.js start"
   },
   "dependencies": {
+    "firebase": "2.4.2",
     "react": "^0.14.8",
     "react-native": "^0.22.2",
+    "react-native-gifted-spinner": "0.0.4",
+    "react-native-meteor": "^1.0.0-rc14",
     "react-redux": "^4.4.5",
     "redux": "^3.5.2",
     "redux-logger": "^2.6.1",

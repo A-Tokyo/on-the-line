@@ -7,7 +7,9 @@ let {
 } = React
 
 import MainContainer from './MainContainer'
-
+import LoginContainer from './LoginContainer.js'
+import FooterContainer from '../components/Footer'
+import Welcome from '../components/Welcome'
 class App extends React.Component {
   constructor(props) {
     super(props)
@@ -37,9 +39,10 @@ class App extends React.Component {
         configureScene={this.configureScene}
         renderScene={this.renderScene}
         initialRoute={{
-          component: MainContainer,
-          name: 'Main'
+          component: Welcome,
+          name: 'welcome'
         }}
+        navigationBar= {<FooterContainer />}
       />
     )
   }
