@@ -26,6 +26,12 @@ export function signupSuccess(){
     type: types.SIGNUP_SUCCESS
   }
 }
+export function signupFail(message){
+  return {
+    type: types.SIGNUP_FAIL,
+    message
+  }
+}
 
 export function signup(){
   return (dispatch,getState) => {
@@ -41,8 +47,20 @@ export function signup(){
       },
       body:JSON.stringify({email, password})
     })
-    .then(
-      dispatch(signupSuccess())
-    )
+    .then(function(response){
+      return response.json().then(function(res){
+        console.log(res)
+        if(res.message === "success")
+        dispatch(signupSuccess())
+        else
+        dispatch(signupFail(res.message))
+        return res;
+      })
+
+    }).catch(
+      ()=> {
+        dispatch(signupFail(res.message))
+        return res;
+      })
+    }
   }
-}

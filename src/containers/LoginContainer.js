@@ -17,10 +17,13 @@ const mapDispatchToProps = (dispatch, ownProps) => {
       dispatch(updatePassword(password))
     },
     signup: ()=>{
-      dispatch(signup())
-      ownProps.navigator.push({
-        component: UploadPic,
-        name: 'upload'
+      dispatch(signup()).then( (res)=>{
+        if(res.message==="success"){
+          ownProps.navigator.push({
+            component: UploadPic,
+            name: 'upload'
+          })
+        }
       })
     }
   }
